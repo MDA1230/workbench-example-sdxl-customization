@@ -49,7 +49,6 @@ environment:
       uid: ""
       gid: ""
       username: ""
-      is_root: null
     package_managers:
     - name: pip
       binary_path: /opt/conda/bin/pip
@@ -103,7 +102,7 @@ execution:
   resources:
     gpu:
       requested: 1
-    sharedMemoryMB: 1024
+    sharedMemoryMB: 4000
   secrets: []
   mounts:
   - type: project
